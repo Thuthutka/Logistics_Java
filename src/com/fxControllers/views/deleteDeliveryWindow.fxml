@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxControllers.DeleteDeliveryWindow">
+   <children>
+      <Text layoutX="18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you want to Delete Delivery:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="deliveryName" layoutX="86.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DeleveryName" />
+      <Button fx:id="deleteBtn" layoutX="35.0" layoutY="144.0" mnemonicParsing="false" onAction="#deleteDeliveryAction" text="Delete" />
+      <Button fx:id="cancelBtn" layoutX="164.0" layoutY="144.0" mnemonicParsing="false" onAction="#cancelAction" text="Cancel" />
+      <Line endX="128.0" layoutX="122.0" layoutY="100.0" startX="-122.0" stroke="RED" />
+   </children>
+</AnchorPane>

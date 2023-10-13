@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxControllers.CreateCheckpointController">
+    <center>
+        <AnchorPane prefHeight="300.0" prefWidth="286.0" style="-fx-background-color: #36454F;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutY="14.0" prefHeight="31.0" prefWidth="283.0" text="Add Checkpoint" textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell Condensed" size="36.0" />
+                    </font>
+                    <effect>
+                        <ColorAdjust contrast="0.02" hue="-0.05" saturation="-0.45" />
+                    </effect>
+                </Label>
+                <Label layoutX="17.0" layoutY="93.0" text="Location:" textFill="WHITE">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="17.0" layoutY="141.0" text="Time:" textFill="WHITE">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="locationText" layoutX="89.0" layoutY="88.0" prefHeight="26.0" prefWidth="177.0" promptText="Checkpoint location">
+                    <font>
+                        <Font name="Schadow BT Bold" size="12.0" />
+                    </font></TextField>
+                <Button fx:id="quitButton" layoutX="214.0" layoutY="338.0" mnemonicParsing="false" onAction="#quitButtonAction" prefHeight="30.0" prefWidth="53.0" style="-fx-background-color: #D22B2B;" text="Quit" textFill="WHITE">
+                    <font>
+                        <Font name="Schadow BT Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="saveAndQuitButton" layoutX="17.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #D3D3D3;" text="Save">
+                    <font>
+                        <Font name="Schadow BT Bold" size="12.0" />
+                    </font></Button>
+                <TextField fx:id="timeSpentText" layoutX="89.0" layoutY="136.0" prefHeight="26.0" prefWidth="177.0" promptText="Time spent (in minutes)">
+                    <font>
+                        <Font name="Schadow BT Bold" size="12.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

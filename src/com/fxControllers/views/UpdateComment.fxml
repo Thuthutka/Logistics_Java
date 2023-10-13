@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxControllers.UpdateComment">
+   <children>
+      <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit comment:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="commentText" layoutX="14.0" layoutY="55.0" prefHeight="156.0" prefWidth="469.0" />
+      <Button fx:id="updateBtn" layoutX="422.0" layoutY="217.0" mnemonicParsing="false" onAction="#UpdateComment" text="Update" />
+   </children>
+</AnchorPane>
